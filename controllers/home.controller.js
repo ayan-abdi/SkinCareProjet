@@ -1,4 +1,6 @@
-const yup = require('yup');
+const Logger = require("nodemon/lib/utils/log");
+const contactValidator = require("../form-validator/contact-validator");
+
 
 const homeController = {
     accueil:(req, res) => {
@@ -12,11 +14,20 @@ const homeController = {
         res.render('home/contact');
     },
     contactResponse:(req, res) => {
-        res.sendStatus(501);
+       if(!contactValidator.isValidSync(req.body)) {
+        return; res.redirect('/contact');
+     
+       }
+       console.log(req.body);
+
+       console.log(req.file);
+       res.render('home/contacResponse');
     },
     news:(req, res) => {
         res.render('home/news')
     },
 };
+  
+
 
 module.exports =homeController;
