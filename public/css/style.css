@@ -1,14 +1,17 @@
 #accueil {
-  background-color: cornflowerblue;
+  background-color: black;
+  color: aliceblue;
 }
 
 div h1 {
   font-size: large;
-  color: darkblue;
+  color: white;
+  background-color: black;
   font-weight: bold;
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 .img--container {
   width: 1250px;
   height: 600px;
@@ -21,7 +24,10 @@ div h1 {
      object-fit: cover;
 }
 
+=======
+>>>>>>> 4042c3454bc69c012e2f87491e36eb95ed05045f
 #nav {
+  background-color: black;
   font-style: normal;
   font-size: 18px;
   font-weight: bold;
@@ -32,9 +38,5 @@ div h1 {
 a {
   color: blanchedalmond;
   text-decoration: none;
-}
-
-div.header {
-  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

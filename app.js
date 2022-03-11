@@ -8,8 +8,12 @@ const port = 8080;
 app.set('view engine', 'ejs');
 app.set('views','./views');
 
+<<<<<<< HEAD
 
 app.use(express.static('public'));
+=======
+app.use(express.urlencoded({ extended: true }))
+>>>>>>> 4042c3454bc69c012e2f87491e36eb95ed05045f
 
 // app.use(homRouter);
 app.use(homeRouter);
